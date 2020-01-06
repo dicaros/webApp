@@ -1,0 +1,608 @@
+/* 1 - GENERIC elements */
+
+body {
+    margin: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: burlywood
+    ;
+}
+
+header {
+    margin: 0;
+    height: 80px;
+    display: block;
+    opacity: 100%;
+    background-color: #000000; 
+    box-shadow: 0px 2px 1px #999999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+h4.userdetailsheader {
+    font-size: small;
+    font-weight: normal;
+    padding: 1px;  
+    margin: 2px;
+}
+
+.description {
+    width: 300px;
+    height: 50px;
+
+}
+
+.signuperror {
+    color: crimson;
+    font-size: smaller;
+}
+
+.tablegames {
+    width: 50%;
+    height: 500px;
+    overflow: auto;
+    background-color: white;
+    border-style: inset;
+    border-width: 0.5px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.tablegamesdetail {
+    width: 50%;
+    height: 500px;
+    overflow: auto;
+    background-color: white;
+    border-style: inset;
+    border-width: 0.5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tableuser1 {
+        width: 20%;
+        height: 500px;
+        overflow: auto;
+        border-style: inset;
+        border-width: 0.5px;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        display: inline-block;
+}
+
+.tablesportcenters {
+    width: 50%;
+    height: 500px;
+    overflow: auto;
+    background-color: white;
+    border-style: inset;
+    border-width: 0.5px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+/* mobile optimization */
+ @media only screen and (max-width: 750px) {
+
+       .tablegames {
+            width: 100%;
+            height: 100%;            
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+            .tableuser1 {
+                height: 0px;
+                margin: 0px;
+                padding: 0px;
+                visibility: hidden;
+            }
+            body {
+                overflow: auto;
+            }
+
+            .tablesportcenters {
+                width: 100%;
+                height: 100%;            
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                background-color: white;
+            }
+    
+
+            span.gameorganizer {
+                    visibility: hidden;
+                }                
+
+                li.gamelist:hover {
+                    background-color: white;
+                }
+                      
+
+}
+
+/* 2 - LINKS */
+
+a.bodylink {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #000000;
+}
+
+a.bodylink:hover {
+    color: #ffdf5f;
+}
+
+a.gamelist {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #000000;    
+}
+
+/* 3 - BUTTONS */
+
+button {
+    background-color: black;
+    color: #71cee7;
+    border-style: hidden;
+    border-color: darkgrey;    
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    box-shadow: 1px 1px 1px #888888;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+button.submitbutton {
+    width: 120px;
+    background-color: lightskyblue;
+    border-style: solid;
+    border-color: darkgrey;
+    border-width: 1px;
+    height: 30px;
+    color: black;
+}
+
+/* 3 - DIV */
+
+div.closewindowdiv {
+    position: relative;
+    font-size: x-large;
+}
+
+div.gameorganizer {
+    position: relative;
+}
+
+div.topheader {
+    text-align: right;
+    font-size: 110%;
+    color: #71cee7;
+}
+
+/* menu icon - start*/
+/*           */
+
+  div.bar1, div.bar2, div.bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #71cee7;
+    margin: 6px 0;
+  }
+
+  div.bar1clicked{
+    -webkit-transform: rotate(-45deg) translate(1px, -1px) ;
+    transform: rotate(-45deg) translate(1px, -1px) ;
+    width: 35px;
+    height: 4px;
+    background-color: #71cee7;
+    margin: 6px 0;
+}
+
+  div.bar3clicked{
+         -webkit-transform: rotate(45deg) translate(-9px, -9px) ;
+         transform: rotate(45deg) translate(-9px, -9px) ;
+         width: 35px;
+         height: 4px;
+         background-color: #71cee7;
+         margin: 6px 0;
+}
+
+  div.container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px;
+  } 
+ 
+  div.line {
+    display: inline-block;
+    width: 110px;
+    height: 2px;
+    background-color: #71cee7;
+}
+
+.listmenu {
+    visibility: visible;
+}
+
+.listmenuhidden {
+    visibility: hidden;
+}
+
+
+
+/* menu icon - end*/
+
+/* 4 - SECTION / SPAN */
+
+section {
+    margin: 5px;
+}
+
+section.appbody {
+    margin-top: 80px;
+    z-index: 100;
+}
+
+span.closewindowspantop {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+}
+
+span.closewindowspanbottom {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+}
+
+span.createbuttonspan {
+    position: absolute;
+    top: -7px;
+    left: 0px;
+}
+
+span.ics {
+        color:#71cee7;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        width: 35px;
+        height: 40px;
+        border-radius: 5px;
+        margin: 6px 0;
+
+}
+
+span.gameorganizer {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+span.today {
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/* 5 - TABLE */
+
+table.sportcenterlist {
+    margin: 0px;
+    padding: 5px;
+    align-self: center;
+    width: 90%;
+}
+
+table.userdetails {
+    width: 98%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    vertical-align: top;
+    margin: 5px;
+}
+
+/* tableheader - start */
+            table.tableheader {
+                width: 100%;  
+            }
+
+
+            td.headermenu_center {
+                width: auto;
+            }
+
+            td.headermenu_left {
+                width: 100px;
+
+            }
+
+            td.headermenu_right {
+                width: 200px;
+            }
+/* tableheader - end */
+
+
+td {
+    text-align: left;
+    padding: 0px;
+}
+
+td.loginbutton {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+td.gamelist {
+    text-align: left;
+    padding: 3px;
+    margin: 0px;
+    border-style: inset;
+    border-width: 0.5px;
+}
+
+td.newgame {
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+}
+
+td.sportcenterlist {
+    text-align: left;
+    padding: 3px;
+    margin: 0px;
+    border-style: inset;
+    border-width: 2px;
+}
+
+
+td.userlist {
+    text-align: center;
+    font-weight: bold;
+    border-style: dotted;
+    border-width: 0.5px;
+    padding: 3px;
+    margin: 0px;
+}
+
+th {
+    padding: 5px;
+    text-align: left;
+    font-weight: normal;
+}
+
+
+th.userdetailsheader {
+    font-size: x-large;
+    font-weight: normal;
+}
+
+th.gamelist {
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    border-style: none;
+    padding: 3px;
+    height: 30px;
+}
+
+/* 6 - LIST */
+
+li.gamelist {
+    list-style-type: none;
+    border-bottom: black;
+    border-bottom-style: inset;
+    border-bottom-width: 0.5px;
+    width: 100%;
+}
+
+li.gameparticipant {
+    list-style-type: none;
+    border-bottom: black;
+    border-bottom-style: inset;
+    border-bottom-width: 0.5px;
+    display: inline;
+}
+
+
+li.gamelistselected
+    {
+    list-style-type: none;
+    border-bottom: black;
+    border-bottom-style: inset;
+    border-bottom-width: 0.5px;
+    width: 100%;
+    background-color: yellow;
+    }
+
+li.gamelist:hover {
+    background-color: #71cee7;
+}
+
+ul.gamelist {
+    overflow-y: auto;
+    height: 380px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.gameparticipant {
+    overflow-y: auto;
+    height: 380px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.sportcenterlist {
+    overflow-y: auto;
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* 7 - IMG */
+
+img.logo {
+    height: 55px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.userlogo {
+    height: 35px;
+    width: 35px;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+img.userpic {
+    height: 120px;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+/* 8 navigation */
+/*           */
+
+nav li {
+    opacity: 100%;
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+  }
+
+nav a:hover {
+    color: #ffdf5f;
+  }
+ 
+ nav li ul {
+    display: none;
+    position: absolute;
+    width: 110px;
+    right: -40px;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #555555;
+    box-shadow: 0px 7px 4px #999999;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+ 
+ nav li > ul {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav li > a {
+    color: #ffffff;
+}
+
+ nav li > a {
+    color: #fff;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    color: #71cee7;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 110px;
+ }
+
+/*/ Date Picker */
+
+.squarebox {
+    width: 180px;
+}
+.squareselected {
+    background: yellow;
+    border: 1px solid #999;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 24px;
+    height: 24px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 24px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 24px;
+    height: 24px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 24px;
+}
+
+  .square:focus {
+    outline: none;
+  }
+
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+
+  .date1 {
+    content: "";
+    display: table;
+  }
+  
+  .dateheader {
+      height: 30px;
+  }
+  .status {
+    margin-bottom: 10px;
+  }
